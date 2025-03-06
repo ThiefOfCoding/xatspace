@@ -1,0 +1,95 @@
+<style>
+        /* Moving Background Animation */
+        @keyframes movingBackground {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 100%; }
+        }
+
+        /* Global Styles */
+        body {
+            background: url("https://xatimg.com/image/uGVCOxfIXxt3.gif") repeat;
+            background-size: cover;
+            animation: movingBackground 15s linear infinite;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Responsive Container */
+        .container {
+            max-width: 90%;
+            width: 400px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px cyan;
+        }
+
+        /* Glowing Animated Text */
+        @keyframes glowingText {
+            0% { color: cyan; text-shadow: 0 0 10px cyan; }
+            50% { color: lime; text-shadow: 0 0 15px lime; }
+            100% { color: cyan; text-shadow: 0 0 10px cyan; }
+        }
+
+        h1 {
+            font-size: 28px;
+            animation: glowingText 2s infinite alternate;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        /* Neon Glowing Profile Picture */
+        .profile-pic {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            border: 3px solid cyan;
+            box-shadow: 0px 0px 15px cyan;
+        }
+
+        /* Animated Links */
+        a {
+            color: yellow;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 5px;
+            margin: 10px;
+            transition: 0.3s;
+            background: rgba(255, 255, 0, 0.2);
+        }
+
+        a:hover {
+            color: orange;
+            text-shadow: 0px 0px 10px orange;
+            transform: scale(1.1);
+            background: rgba(255, 165, 0, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 500px) {
+            .container {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
